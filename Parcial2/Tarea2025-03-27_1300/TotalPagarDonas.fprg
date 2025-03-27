@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="TotalPagarDonas"/>
+        <attribute name="authors" value="jorge"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 06:30:19 PM"/>
+        <attribute name="created" value="bW95dmU7TEFQVE9QLTAyR0oyUEM3OzIwMjUtMDMtMjY7MDY6MDQ6MjAgUE07Mjg0MA=="/>
+        <attribute name="edited" value="bW95dmU7TEFQVE9QLTAyR0oyUEM3OzIwMjUtMDMtMjY7MDY6MzA6MTkgUE07MjsyOTU2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="donas" type="Integer" array="False" size=""/>
+            <output expression="&quot;Cuantas donas desea comprar&quot;" newline="True"/>
+            <input variable="donas"/>
+            <if expression="donas &gt; 0">
+                <then>
+                    <if expression="donas &lt; 30">
+                        <then>
+                            <assign variable="donas" expression="donas * 10"/>
+                            <output expression="&quot;El total a pagar es:&quot; &amp;donas" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="donas &gt;= 50">
+                                <then>
+                                    <assign variable="donas" expression="donas * 8"/>
+                                    <output expression="&quot;Tiene descuento y el total a pagar es: &quot; &amp;donas" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="donas &gt;= 30">
+                                        <then>
+                                            <assign variable="donas" expression="donas * 9"/>
+                                            <output expression="&quot;Tiene descuento y el total a pagar es:&quot; &amp;donas" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Cantidad no valida&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

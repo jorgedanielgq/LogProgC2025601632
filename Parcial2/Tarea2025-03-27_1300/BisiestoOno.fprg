@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="BisiestoOno"/>
+        <attribute name="authors" value="moyve"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 06:56:24 PM"/>
+        <attribute name="created" value="bW95dmU7TEFQVE9QLTAyR0oyUEM3OzIwMjUtMDMtMjY7MDY6MzA6NTUgUE07Mjg0Nw=="/>
+        <attribute name="edited" value="bW95dmU7TEFQVE9QLTAyR0oyUEM3OzIwMjUtMDMtMjY7MDY6NTY6MjQgUE07MTsyOTU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fecha" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese un a&#241;o para verificar si es bisiesto o no&quot;" newline="True"/>
+            <input variable="fecha"/>
+            <if expression="fecha %4==0 &amp;&amp;&#13;&#10;fecha %100 !=0 || fecha %400==0">
+                <then>
+                    <output expression="&quot;Es a&#241;o bisiesto&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;no es a&#241;o bisiesto&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
