@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="salaGamer"/>
+        <attribute name="authors" value="moyve"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-01 09:50:06 PM"/>
+        <attribute name="created" value="bW95dmU7TEFQVE9QLTAyR0oyUEM3OzIwMjUtMDQtMDE7MDk6MzM6NDIgUE07Mjg0Mw=="/>
+        <attribute name="edited" value="bW95dmU7TEFQVE9QLTAyR0oyUEM3OzIwMjUtMDQtMDE7MDk6NTA6MDYgUE07MTsyOTUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <output expression="&quot;Cuantos anios tienes&quot;" newline="True"/>
+            <input variable="edad"/>
+            <if expression="edad &gt; 18">
+                <then>
+                    <output expression="&quot;Debes de pagar 500 pesos&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="edad &gt;= 4 || edad  == 18">
+                        <then>
+                            <output expression="&quot;Debes de pagar 200 pesos&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="edad &gt; 0 &amp;&amp; edad &lt; 4">
+                                <then>
+                                    <output expression="&quot;Tu entrada es gratis, disfruta&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;No tienes la posibilidad de jugar&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
