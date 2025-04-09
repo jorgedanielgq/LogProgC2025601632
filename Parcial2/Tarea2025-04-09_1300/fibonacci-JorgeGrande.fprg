@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fibonacci-JorgeGrande"/>
+        <attribute name="authors" value="moyve"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 12:26:52 AM"/>
+        <attribute name="created" value="bW95dmU7TEFQVE9QLTAyR0oyUEM3OzIwMjUtMDQtMDk7MTI6MjM6MzUgQU07MjgzMQ=="/>
+        <attribute name="edited" value="bW95dmU7TEFQVE9QLTAyR0oyUEM3OzIwMjUtMDQtMDk7MTI6MjY6NTIgQU07MTsyOTQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="secuencia, n1, n2, resultado, i" type="Integer" array="False" size=""/>
+            <assign variable="secuencia" expression="64"/>
+            <assign variable="n1" expression="1"/>
+            <assign variable="n2" expression="2"/>
+            <output expression="&quot;La secuencia de los primeros 64 numeros de fibonacci son:&quot;" newline="True"/>
+            <output expression="&quot;&quot; &amp;n1" newline="True"/>
+            <output expression="&quot;&quot;&amp;n2" newline="True"/>
+            <for variable="i" start="3" end="secuencia" direction="inc" step="1">
+                <assign variable="resultado" expression="n1 + n2"/>
+                <assign variable="n1" expression="n2"/>
+                <assign variable="n2" expression="resultado"/>
+                <output expression="&quot;&quot;&amp;resultado" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

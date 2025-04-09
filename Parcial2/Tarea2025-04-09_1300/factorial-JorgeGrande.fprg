@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="factorial-JorgeGrande"/>
+        <attribute name="authors" value="moyve"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 12:37:53 AM"/>
+        <attribute name="created" value="bW95dmU7TEFQVE9QLTAyR0oyUEM3OzIwMjUtMDQtMDk7MTI6Mjc6MDAgQU07MjgyNw=="/>
+        <attribute name="edited" value="bW95dmU7TEFQVE9QLTAyR0oyUEM3OzIwMjUtMDQtMDk7MTI6Mzc6NTMgQU07MTsyOTQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, factorial, i, result" type="Integer" array="False" size=""/>
+            <assign variable="factorial" expression="1"/>
+            <output expression="&quot;Ingresa un numero para hacerlo factorial&quot;" newline="True"/>
+            <input variable="numero"/>
+            <for variable="i" start="1" end="numero" direction="inc" step="1">
+                <assign variable="factorial" expression="factorial * i"/>
+            </for>
+            <assign variable="result" expression="factorial"/>
+            <output expression="&quot;Su factorial es: &quot; &amp;result" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
